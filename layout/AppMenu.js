@@ -1,9 +1,6 @@
-
 import React from 'react';
 import AppMenuitem from './AppMenuitem';
 import { MenuProvider } from './context/menucontext';
-
-// import { Menubar } from 'primereact/menubar';
 
 const AppMenu = () => {
 

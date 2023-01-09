@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 export const LayoutContext = React.createContext();
 
 export const LayoutProvider = (props) => {
@@ -11,7 +10,6 @@ export const LayoutProvider = (props) => {
         theme: 'lara-light-indigo',
         scale: 14
     });
-
     const [layoutState, setLayoutState] = useState({
         staticMenuDesktopInactive: false,
         overlayMenuActive: false,

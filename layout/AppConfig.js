@@ -1,6 +1,5 @@
 
-const AppConfig = (props) => {
-
+const AppConfig = () => {
     return (
         <>
             <h2>Afex</h2>

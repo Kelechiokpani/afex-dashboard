@@ -1,4 +1,3 @@
-import getConfig from 'next/config';
 import Link from 'next/link';
 import logo from "../public/demo/images/notfound/Rectangle.png"
 import Image from 'next/image'
@@ -22,12 +21,10 @@ const AppTopbar = forwardRef((props, ref) => {
 
     return (
         <div className="layout-topbar">
-
             <Link href="/">
                 <a className="layout-topbar-logo">
                     <>
                         <Image src={logo} width={80} height={55} />
-                        {/* <span>ComX</span> */}
                     </>
                 </a>
             </Link>

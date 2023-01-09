@@ -18,7 +18,6 @@ const AppMenuitem = (props) => {
         if (item.to && router.pathname === item.to) {
             setActiveMenu(key);
         }
-
         const onRouteChange = (url) => {
             if (item.to && item.to === url) {
                 setActiveMenu(key);

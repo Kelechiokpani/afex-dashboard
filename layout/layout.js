@@ -47,7 +47,6 @@ const Layout = (props) => {
             }
         }
     });
-
     const hideMenu = () => {
         setLayoutState((prevLayoutState) => ({ ...prevLayoutState, overlayMenuActive: false, staticMenuMobileActive: false, menuHoverActive: false }));
         unbindMenuOutsideClickListener();
