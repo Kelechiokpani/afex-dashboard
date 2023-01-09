@@ -72,6 +72,7 @@ const Layout = (props) => {
         layoutState.staticMenuMobileActive && blockBodyScroll();
     }, [layoutState.overlayMenuActive, layoutState.staticMenuMobileActive]);
 
+
     useEffect(() => {
         if (layoutState.profileSidebarVisible) {
             bindProfileMenuOutsideClickListener();
