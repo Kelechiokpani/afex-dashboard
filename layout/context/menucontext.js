@@ -8,5 +8,5 @@ export const MenuProvider = (props) => {
         setActiveMenu
     };
 
-    return <MenuContext.Provider value={value}>{props.children}</MenuContext.Provider>;
+    return <MenuContext.Provider value={value} key={value}>{props.children}</MenuContext.Provider>;
 };

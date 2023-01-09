@@ -25,13 +25,12 @@ const AppMenu = () => {
 
     return (
         <MenuProvider>
-            <ul className="layout-menu">
-                {model.map((item, i) => {
+            <ul  className="layout-menu">
+                {model.map((item, id) => {
                     return !item.seperator ?
-                        <AppMenuitem item={item} root={true} index={i} key={item.label} /> :
-                        <li className="menu-separator"></li>;
+                        <AppMenuitem  item={item} root={true} index={id} key={item.id} /> :
+                        <li key={item.id} className="menu-separator"></li>;
                 })}
-
             </ul>
         </MenuProvider>
     );

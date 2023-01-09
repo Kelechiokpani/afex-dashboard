@@ -52,5 +52,5 @@ export const LayoutProvider = (props) => {
         showProfileSidebar
     };
 
-    return <LayoutContext.Provider value={value}>{props.children}</LayoutContext.Provider>;
+    return <LayoutContext.Provider value={value} key={value}>{props.children}</LayoutContext.Provider>;
 };
