@@ -52,7 +52,6 @@ const Layout = (props) => {
         unbindMenuOutsideClickListener();
         unblockBodyScroll();
     };
-
     const hideProfileMenu = () => {
         setLayoutState((prevLayoutState) => ({ ...prevLayoutState, profileSidebarVisible: false }));
         unbindProfileMenuOutsideClickListener();
