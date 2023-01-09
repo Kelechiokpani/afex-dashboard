@@ -64,7 +64,6 @@ const Layout = (props) => {
     const unblockBodyScroll = () => {
         DomHandler.removeClass('blocked-scroll');
     };
-
     useEffect(() => {
         if (layoutState.overlayMenuActive || layoutState.staticMenuMobileActive) {
             bindMenuOutsideClickListener();
