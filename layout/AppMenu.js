@@ -1,9 +1,9 @@
 
-import React, { useContext } from 'react';
+import React from 'react';
 import AppMenuitem from './AppMenuitem';
 import { MenuProvider } from './context/menucontext';
 
-import { Menubar } from 'primereact/menubar';
+// import { Menubar } from 'primereact/menubar';
 
 const AppMenu = () => {
 
@@ -16,11 +16,11 @@ const AppMenu = () => {
         {
             
             items: [
-                { label: 'Market', icon: 'pi pi-fw  pi-chart-line ', to: '/uikit/formlayout' },
-                { label: 'Portfolio', icon: 'pi pi-fw pi pi-folder', to: '/uikit/input' },
-                { label: 'Community', icon: 'pi pi-fw pi pi-users', to: '/uikit/floatlabel' },
-                { label: 'Reports', icon: 'pi pi-fw pi pi-chart-bar', to: '/uikit/floatlabel' },
-                { label: 'Settings', icon: 'pi pi-fw pi pi-cog', to: '/uikit/floatlabel' },
+                { label: 'Market', icon: 'pi pi-fw  pi-chart-line ', to: '/' },
+                { label: 'Portfolio', icon: 'pi pi-fw pi pi-folder', to: '/' },
+                { label: 'Community', icon: 'pi pi-fw pi pi-users', to: '/' },
+                { label: 'Reports', icon: 'pi pi-fw pi pi-chart-bar', to: '/' },
+                { label: 'Settings', icon: 'pi pi-fw pi pi-cog', to: '/' },
             ]
         },
 

@@ -1,12 +1,12 @@
 import getConfig from 'next/config';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import React from 'react';
 import AppConfig from '../../../layout/AppConfig';
 import Link from 'next/link';
 
 const NotFoundPage = () => {
     const contextPath = getConfig().publicRuntimeConfig.contextPath;
-    const router = useRouter();
+    // const router = useRouter();
 
     return (
         <div className="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
@@ -24,7 +24,6 @@ const NotFoundPage = () => {
                                 </span>
                                 <span className="ml-4 flex flex-column">
                                     <span className="text-900 lg:text-xl font-medium mb-1">Frequently Asked Questions</span>
-                                    <span className="text-600 lg:text-lg">Ultricies mi quis hendrerit dolor.</span>
                                 </span>
                             </a>
                         </Link>
@@ -35,7 +34,6 @@ const NotFoundPage = () => {
                                 </span>
                                 <span className="ml-4 flex flex-column">
                                     <span className="text-900 lg:text-xl font-medium mb-1">Solution Center</span>
-                                    <span className="text-600 lg:text-lg">Phasellus faucibus scelerisque eleifend.</span>
                                 </span>
                             </a>
                         </Link>
@@ -46,7 +44,6 @@ const NotFoundPage = () => {
                                 </span>
                                 <span className="ml-4 flex flex-column">
                                     <span className="text-900 lg:text-xl font-medium mb-1">Permission Manager</span>
-                                    <span className="text-600 lg:text-lg">Accumsan in nisl nisi scelerisque</span>
                                 </span>
                             </a>
                         </Link>

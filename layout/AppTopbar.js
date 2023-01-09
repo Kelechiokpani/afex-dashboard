@@ -7,11 +7,11 @@ import React, { forwardRef, useContext, useImperativeHandle, useRef } from 'reac
 import { LayoutContext } from './context/layoutcontext';
 
 const AppTopbar = forwardRef((props, ref) => {
-    const { layoutConfig, layoutState, onMenuToggle, showProfileSidebar } = useContext(LayoutContext);
+    const { layoutState, onMenuToggle, showProfileSidebar } = useContext(LayoutContext);
     const menubuttonRef = useRef(null);
     const topbarmenuRef = useRef(null);
     const topbarmenubuttonRef = useRef(null);
-    const contextPath = getConfig().publicRuntimeConfig.contextPath;
+    // const contextPath = getConfig().publicRuntimeConfig.contextPath;
 
     useImperativeHandle(ref, () => ({
         menubutton: menubuttonRef.current,
@@ -52,7 +52,6 @@ const AppTopbar = forwardRef((props, ref) => {
                     <span>LOAN BALANCE</span>
                     <p>₦7,542,246</p>
                 </div>
-                {/*<div className="h-full bg-gray-500 " style={{ width: '1px', minHeight: '3rem', marginLeft: "2rem" }}></div>*/}
                 <button ref={menubuttonRef} type="button" className=" mt-4 mb-4  p-2 bg-white border-none cursor-pointer  layout-menu-button" onClick={onMenuToggle}>
                     <i className="pi pi-bars" />
                 </button>

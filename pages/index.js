@@ -1,19 +1,19 @@
-
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import Manager from "../encryption";
-import UserLogin from "../components/userLogin";
-
+import React from 'react';
+import DashboardOverview from "../components/DashboardOverview";
+import ProductGrid from "../components/productGrid";
 
 
-const LoginPage = () => {
+
+const HomePage = () => {
 
     return (
         <div>
-            <UserLogin Manager={Manager}/>
-
+            <DashboardOverview/>
+            {/*---------------*/}
+            <ProductGrid />
         </div>
 
     );
 };
 
-export default LoginPage;
+export default HomePage;
