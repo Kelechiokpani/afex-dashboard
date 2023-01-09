@@ -1,6 +1,6 @@
 {
-    "name": "afex-comx",
-    "version": "8.0.1-SNAPSHOT",
+    "name": "afex",
+    "version": "8.0.1",
     "private": false,
     "scripts": {
         "dev": "next dev",
@@ -24,7 +24,6 @@
         "primereact": "^8.6.1",
         "react": "17.0.2",
         "react-dom": "17.0.2",
-        "react-encrypt": "^1.0.1",
         "react-fast-marquee": "^1.3.5",
         "react-transition-group": "^4.4.5"
     },
