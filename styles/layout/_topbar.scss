@@ -7,10 +7,10 @@
     width: 100%;
     padding: 0 2rem;
     background-color: var(--surface-card);
-    transition: left $transitionDuration;
+    // transition: left $transitionDuration;
     display: flex;
     align-items: center;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .02), 0px 0px 2px rgba(0, 0, 0, .05), 0px 1px 4px rgba(0, 0, 0, .08);
 
     .layout-topbar-logo {
         display: flex;
@@ -18,7 +18,7 @@
         color: var(--surface-900);
         font-size: 1.5rem;
         font-weight: 500;
-        width: 300px;
+        width: 400px;
         border-radius: 12px;
 
         img {
@@ -32,18 +32,19 @@
     }
 
     .layout-topbar-button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        justify-content: flex-end;
+        align-items: flex-end;
         position: relative;
+        padding: 1rem;
         color: var(--text-color-secondary);
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
+        ;
         cursor: pointer;
+        text-align: end;
         transition: background-color $transitionDuration;
 
         &:hover {
+            padding: 1rem;
             color: var(--text-color);
             background-color: var(--surface-hover);
         }
@@ -52,19 +53,25 @@
             @include focused();
         }
 
-        i {
-            font-size: 1.5rem;
-        }
+
 
         span {
-            font-size: 1rem;
-            display: none;
+            font-size: 11px;
+            font-weight: 600;
+            color: black;
+
+            // display: none;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 12px;
+            color: black;
+            margin-top: 6px;
         }
     }
 
-    .layout-menu-button {
-        margin-left: 2rem;
-    }
+
 
     .layout-topbar-menu-button {
         display: none;
@@ -76,12 +83,14 @@
 
     .layout-topbar-menu {
         margin: 0 0 0 auto;
-        padding: 0;
+        //padding: 0;
         list-style: none;
         display: flex;
+        padding: 3rem;
+
 
         .layout-topbar-button {
-            margin-left: 1rem;
+            margin-left: 2rem;
         }
     }
 }
@@ -96,7 +105,7 @@
         }
 
         .layout-menu-button {
-            margin-left: 0;
+            margin: 0;
             order: 1;
         }
 
@@ -111,7 +120,7 @@
             position: absolute;
             flex-direction: column;
             background-color: var(--surface-overlay);
-            box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, .02), 0px 0px 2px rgba(0, 0, 0, .05), 0px 1px 4px rgba(0, 0, 0, .08);
             border-radius: 12px;
             padding: 1rem;
             right: 2rem;
@@ -127,7 +136,7 @@
 
             .layout-topbar-button {
                 margin-left: 0;
-                display: flex;
+                display: block;
                 width: 100%;
                 height: auto;
                 justify-content: flex-start;
