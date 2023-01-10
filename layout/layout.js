@@ -120,7 +120,6 @@ const Layout = (props) => {
                 <meta property="og:ttl" content="604800"></meta>
                 <link rel="icon" href={`${contextPath}/favicon.ico`} type="image/x-icon"></link>
             </Head>
-
             <div className={containerClass}>
                 <AppTopbar ref={topbarRef} />
                 <div ref={sidebarRef} className="layout-sidebar">
